@@ -9,7 +9,8 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+      /* Strong soulful gradient */
+      background: linear-gradient(135deg, #0f0f0f, #1c1c1c, #3a0f3a, #800080);
       color: #fff;
       text-align: center;
       display: flex;
@@ -17,7 +18,9 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+      transition: background 0.5s ease;
     }
+
     .profile-img {
       width: 140px;
       height: 140px;
@@ -26,20 +29,25 @@
       margin-bottom: 15px;
       border: 3px solid #fff;
       box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .profile-img:hover {
       transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
     }
+
     h1 {
       font-size: 2rem;
       margin: 10px 0;
     }
+
     p.tagline {
       font-size: 1rem;
       color: #bbb;
       margin-bottom: 30px;
     }
+
     .links {
       display: flex;
       flex-direction: column;
@@ -47,28 +55,35 @@
       width: 90%;
       max-width: 400px;
     }
+
     .links a {
       text-decoration: none;
       padding: 15px;
       border-radius: 30px;
       font-size: 1.1rem;
       font-weight: bold;
-      background: #222;
+      background: rgba(34,34,34,0.8);
       color: #fff;
       border: 1px solid #444;
       transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+
     .links a:hover {
       background: #fff;
       color: #000;
       transform: translateY(-3px);
-      box-shadow: 0 4px 15px rgba(255,255,255,0.2);
+      box-shadow: 0 4px 15px rgba(255,255,255,0.3);
     }
+
     footer {
       margin-top: 40px;
       font-size: 0.8rem;
-      color: #777;
+      color: #aaa;
     }
+
     @media (max-width: 500px) {
       h1 { font-size: 1.5rem; }
       .links a { font-size: 1rem; padding: 12px; }
@@ -91,3 +106,4 @@
   <footer>© 2025 SPureRuh</footer>
 </body>
 </html>
+   
