@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SPureRuh — LinkTree</title>
+  <link rel="icon" href="favicon.png">
   <style>
     body {
       margin: 0;
@@ -25,6 +26,10 @@
       margin-bottom: 15px;
       border: 3px solid #fff;
       box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease;
+    }
+    .profile-img:hover {
+      transform: scale(1.05);
     }
     h1 {
       font-size: 2rem;
@@ -57,11 +62,16 @@
       background: #fff;
       color: #000;
       transform: translateY(-3px);
+      box-shadow: 0 4px 15px rgba(255,255,255,0.2);
     }
     footer {
       margin-top: 40px;
       font-size: 0.8rem;
       color: #777;
+    }
+    @media (max-width: 500px) {
+      h1 { font-size: 1.5rem; }
+      .links a { font-size: 1rem; padding: 12px; }
     }
   </style>
 </head>
@@ -71,11 +81,11 @@
   <p class="tagline">A Soul in Words & Music</p>
 
   <div class="links">
-    <a href="https://instagram.com/spureruh" target="_blank">🌸 Instagram</a>
-    <a href="https://www.youtube.com/@SPureRuh" target="_blank">▶️ YouTube</a>
-    <a href="https://cshekhar10.github.io" target="_blank">🌐 Website</a>
-    <a href="https://spureruh.medium.com" target="_blank">✍️ Medium</a>
-    <a href="https://facebook.com" target="_blank">📘 Facebook</a>
+    <a href="https://instagram.com/spureruh" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/@SPureRuh" target="_blank">YouTube</a>
+    <a href="https://cshekhar10.github.io" target="_blank">Official Site</a>
+    <a href="https://spureruh.medium.com" target="_blank">Medium</a>
+    <a href="https://facebook.com" target="_blank">Facebook</a>
   </div>
 
   <footer>© 2025 SPureRuh</footer>
